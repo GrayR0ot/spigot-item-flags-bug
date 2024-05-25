@@ -46,7 +46,11 @@ public final class ItemFlagsBug extends JavaPlugin implements Listener {
         player.getInventory().addItem(virtual);
 
         player.sendMessage("=============================");
-        player.sendMessage(player.getInventory().getItem(0).toString());
+
+        ItemStack physical = player.getInventory().getItem(0);
+        player.sendMessage(physical.toString());
+
+        player.sendMessage("Is similar method works: " + (virtual.isSimilar(physical) ? "§a§lYES" : "§c§lNO"));
     }
 
 }
