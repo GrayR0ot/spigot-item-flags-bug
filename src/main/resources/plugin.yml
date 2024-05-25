@@ -1,0 +1,4 @@
+name: item-flags-bug
+version: '${project.version}'
+main: eu.grayroot.itemflagsbug.ItemFlagsBug
+api-version: '1.20'
